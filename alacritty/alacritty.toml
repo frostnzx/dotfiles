@@ -1,0 +1,75 @@
+# ~/.config/alacritty/alacritty.toml
+
+[env]
+# If you use tmux/screen a lot, keep this. Otherwise "xterm-256color" is the common default.
+TERM = "screen-256color"
+
+[font]
+size = 12.0
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+
+# -------- Keybindings (Linux conventions) --------
+# Notes:
+# - Ctrl+Shift+C / Ctrl+Shift+V are the "normal terminal" copy/paste on Linux.
+# - Alt+Enter is a common fullscreen toggle (like many terminals/WMs).
+# - Anything macOS "Command" is replaced with Linux-friendly keys.
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "N"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+key = "F11"
+action = "ToggleFullscreen"
+
+# -------- Window --------
+#[window]
+#opacity = 1.0
+#decorations = "none"
+#dynamic_padding = true
+
+[window.padding]
+x = 20
+y = 20
+
+# -------- Theme import --------
+[general]
+import = ["./themes/themes/gruvbox_material_medium_dark.toml"]
+
